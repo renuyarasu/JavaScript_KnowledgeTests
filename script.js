@@ -2,7 +2,6 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 02
+// Test: 03
 
-console.log(![]); // false
-console.log(!['Hello World!']); // false
+console.log(2.5e3); // 2500
