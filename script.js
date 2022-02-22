@@ -2,12 +2,11 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 05
+// Test: 06
 
-let user = {
-    name: 'VedaGna',
-    go: function () {
-        console.log(this.name);
-    }
+function x() {
+    console.log(this.name);
 }
-user.go() // VedaGna
+x = x.bind({ name: 'VedaGna' }).bind({ name: 'Yarasu' });
+
+x(); // VedaGna
