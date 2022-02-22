@@ -3,3 +3,8 @@
 console.clear();
 
 // Test: 01
+
+function newArray(value) {
+    return [value]
+};
+console.log(newArray(3)); // [ 3 ]
