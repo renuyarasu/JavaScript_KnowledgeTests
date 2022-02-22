@@ -2,9 +2,7 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 01
+// Test: 02
 
-function newArray(value) {
-    return [value]
-};
-console.log(newArray(3)); // [ 3 ]
+console.log(![]); // false
+console.log(!['Hello World!']); // false
