@@ -2,6 +2,11 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 03
+// Test: 04
 
-console.log(2.5e3); // 2500
+let a = { greetings: 'Hey!' };
+let b;
+
+b = a;
+a.greetings = 'Hello!!!';
+console.log(b.greetings); //Hello!!!
