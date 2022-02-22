@@ -2,9 +2,6 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 13
+// Test: 14
 
-const a = '55' - 5;
-const b = '55' + 5;
-
-console.log(a, b); // 50 555
+console.log(true + false + true - false); //2
