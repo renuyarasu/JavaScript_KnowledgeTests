@@ -2,11 +2,15 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 06
+// Test: 07
 
-function x() {
-    console.log(this.name);
+function Car(companyName, model) {
+    this.companyName = companyName;
+    this.model = model;
 }
-x = x.bind({ name: 'VedaGna' }).bind({ name: 'Yarasu' });
 
-x(); // VedaGna
+const opel = Car('Opel', 'Astra');
+const bmw = new Car('BMW', 'X5');
+
+console.log(opel); // undefined
+console.log(bmw); // Car { companyName: 'BMW', model: 'X5' }
