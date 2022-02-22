@@ -2,6 +2,10 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 14
+// Test: 15
 
-console.log(true + false + true - false); //2
+const myArray = [0, 1, 2];
+const value = myArray.join();
+
+console.log(value); // 0,1,2
+
