@@ -2,13 +2,12 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 09
+// Test: 10
 
-let car_01 = {
-    companyName: 'Audi'
+const items = [1, 15, 2, 25, 3];
+const myFunction = (value) => value + 5;
+
+for (let i = 0; i < items.length; i++) {
+    myFunction(items[i]);
 }
-let car_02 = null;
-let key = 'companyName';
-
-console.log(car_01?.[key]); // Audi
-console.log(car_02?.[key]); // undefined
+console.log(items); // [ 1, 15, 2, 25, 3 ]
