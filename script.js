@@ -2,7 +2,13 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 08
+// Test: 09
 
-let myFunction = function () { };
-console.log(!myFunction() || myFunction()); //true
+let car_01 = {
+    companyName: 'Audi'
+}
+let car_02 = null;
+let key = 'companyName';
+
+console.log(car_01?.[key]); // Audi
+console.log(car_02?.[key]); // undefined
