@@ -2,11 +2,12 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 04
+// Test: 05
 
-let a = { greetings: 'Hey!' };
-let b;
-
-b = a;
-a.greetings = 'Hello!!!';
-console.log(b.greetings); //Hello!!!
+let user = {
+    name: 'VedaGna',
+    go: function () {
+        console.log(this.name);
+    }
+}
+user.go() // VedaGna
