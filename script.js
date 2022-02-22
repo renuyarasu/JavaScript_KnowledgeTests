@@ -2,15 +2,9 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 12
+// Test: 13
 
+const a = '55' - 5;
+const b = '55' + 5;
 
-function myFunction() {
-    let a = 5
-    if (a === 5) {
-        let b = 10
-    }
-    return b
-}
-
-console.log(myFunction()); // b is not defined
+console.log(a, b); // 50 555
