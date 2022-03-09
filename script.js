@@ -12,4 +12,4 @@ const person = {
 let city = person.city;
 city = 'Hyderabad';
 
-console.log(person); //{ name: 'VedaGna', age: 5 }
+console.log(person.city); //undefined
