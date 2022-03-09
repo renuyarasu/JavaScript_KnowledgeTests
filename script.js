@@ -2,10 +2,15 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 15
+// Test: 16 [October 20, 2021]
+// Think about what will be printed to the console after the program is executed.
 
-const myArray = [0, 1, 2];
-const value = myArray.join();
-
-console.log(value); // 0,1,2
-
+function check_age(age) {
+    if (age < 18) {
+        var message = 'Boy!'
+    } else {
+        var message = 'Men!'
+    }
+    return message;
+}
+console.log(check_age(35)); // Men!
