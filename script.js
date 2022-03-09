@@ -2,19 +2,25 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 19 [October 25, 2021]
+// Test: 20 [October 26, 2021]
 // Think about what will be printed to the console after the program is executed.
 
 
-function getItems(carList, ...args, favCar) {
-    return [...carList, ...args, favCar]
+
+const set = new Set();
+set.add(3);
+set.add('JavaScript');
+set.add({ url: 'https://telegra.ph/Zadacha-JS-10-26-2' });
+
+for (let item of set) {
+    console.log(item + 2);
 }
 
-let result = getItems(['Lada', 'Audi'], 'Tata', 'BMW');
-console.log(result); // SyntaxError: Rest parameter must be last formal parameter
-
 /* 
-Explanation: https://telegra.ph/Zadacha-JS-10-25-2
-...args is an array containing all remaining arguments and can only be passed last! In this example, other parameters were the second parameter, not the last . 
-This will result in a syntax error.
+Explanation: https://telegra.ph/Zadacha-JS-10-26-2
+
+1) 3 + 2 = 5
+2) JS tests is a string, so concatenation happens . Get string Tests JS2
+3) { url: "@javascript_tests" } - object. The object is not a string, so it is cast to a string, and when we cast a normal object to a string, it becomes [object Object] . 
+    Next , we concatenate already with the string "2" and get [object Object]2
 */
