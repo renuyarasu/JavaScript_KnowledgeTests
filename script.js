@@ -2,8 +2,10 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 17 [October 23, 2021]
+// Test: 18 [October 24, 2021]
 // Think about what will be printed to the console after the program is executed.
 
-const num = [] + false - null + true;
-console.log(num); // NaN
+let a = [1, 2, 3];
+let b = [1, 2, 3];
+let result = (a == b);
+console.log(result); // false
