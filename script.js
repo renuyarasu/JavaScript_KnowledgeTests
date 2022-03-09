@@ -7,10 +7,10 @@ console.clear();
 
 function check_age(age) {
     if (age < 18) {
-        var message = 'Boy!'
+        const message = 'Boy!'
     } else {
-        var message = 'Men!'
+        const message = 'Men!'
     }
     return message;
 }
-console.log(check_age(35)); // Men!
+console.log(check_age[35]); // undefined
