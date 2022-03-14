@@ -9,7 +9,7 @@ console.clear();
 
 const set = new Set();
 set.add(3);
-set.add('JavaScript');
+set.add('JavaScript ');
 set.add({ url: 'https://telegra.ph/Zadacha-JS-10-26-2' });
 
 for (let item of set) {
