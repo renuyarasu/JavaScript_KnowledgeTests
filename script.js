@@ -2,25 +2,15 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 20 [October 26, 2021]
-// Think about what will be printed to the console after the program is executed.
+// Test: 21 [October 27, 2021]
 
-
-
-const set = new Set();
-set.add(3);
-set.add('JavaScript ');
-set.add({ url: 'https://telegra.ph/Zadacha-JS-10-26-2' });
-
-for (let item of set) {
-    console.log(item + 2);
-}
+const func = ({ a, b, c }) => {
+    console.log(a, b, c);
+};
+func(1, 2, 3) // undefined undefined undefined
 
 /* 
-Explanation: https://telegra.ph/Zadacha-JS-10-26-2
+Explanation:
+In the parameters of the arrow function, we pass an object with fields a, b and c. And we are trying to display the variables a, b and c , 
+which are not declared, so we get undefined 3 times. */
 
-1) 3 + 2 = 5
-2) JS tests is a string, so concatenation happens . Get string Tests JS2
-3) { url: "@javascript_tests" } - object. The object is not a string, so it is cast to a string, and when we cast a normal object to a string, it becomes [object Object] . 
-    Next , we concatenate already with the string "2" and get [object Object]2
-*/
