@@ -2,18 +2,19 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 22 [October 29, 2021]
+// Test: 23 [October 30, 2021]
 
-let n = 7;
-javascript_tests:
-for (let i = 2; i <= n; i++) {
-    for (let j = 2; j < i; j++) {
-        if (i % j == 0) continue javascript_tests
-    }
-    console.log(i); 
-    /* 
-    2
-3
-5
-7 */
+function sum(a, b) {
+    console.log(a + b);
 }
+sum("2", 4) //24
+
+/* 
+Explanation:
+
+JavaScript is a dynamically typed language: we don't define the type of variables. Variables can be automatically converted from one type to another without our participation, which is called   implicit type casting . A cast is a conversion from one type to another.
+
+In this example, JavaScript has converted the number   4   to a string so that the operation inside the function makes sense. JS then concatenated the two strings, and thus we got the answer 24 (string)
+ */
+
+
