@@ -2,19 +2,15 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 23 [October 30, 2021]
+// Test: 24 [October 31, 2021]
 
-function sum(a, b) {
-    console.log(a + b);
-}
-sum("2", 4) //24
+const a = 5;
+console.log(+-a); // -5
 
 /* 
 Explanation:
 
-JavaScript is a dynamically typed language: we don't define the type of variables. Variables can be automatically converted from one type to another without our participation, which is called   implicit type casting . A cast is a conversion from one type to another.
-
-In this example, JavaScript has converted the number   4   to a string so that the operation inside the function makes sense. JS then concatenated the two strings, and thus we got the answer 24 (string)
- */
+In this example, we used unary + . Such a plus + does not change the number (Number) in any way. But if the operand is not a number, the unary plus will convert it to a number.
+5 is a number. The unary + does not convert it in any way, so -5 will be printed to the console . */
 
 
