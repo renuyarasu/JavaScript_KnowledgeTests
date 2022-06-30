@@ -2,25 +2,17 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 06[November 06, 2021]
+// Test: 07 [November 07, 2021]
 
-function a(val) {
-    return true - val;
-}
-let sum = a('10') + a('-10') + a('-10') + a('10');
-console.log(sum); // 4
+let arr = x => (x, 0, 1, 2)
+let result = arr(10);
+console.log(result);
 
 /* 
 Explanation:
 
-Inside the function there is a '-' sign, which means that when calculations occur, it will convert to a number:
+In this example, arr is an arrow function that takes x and returns (x, 0, 1, 2). The comma operator is also used here.
 
-true --> 1
-
-'10' --> 10
-
-'-10' --> -10
-
-And then the usual mathematical calculations. */
+The comma operator   executes each of its operands (from left to right) and returns the value of the last operand. Therefore, the last value will be returned , ie 2. */
 
 
