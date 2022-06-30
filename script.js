@@ -2,11 +2,17 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 07 [November 07, 2021]
+// Test: 08 [November 08, 2021]
 
-let arr = x => (x, 0, 1, 2)
-let result = arr(10);
-console.log(result);
+const obj = { number: 5 };
+
+const func = (x = { ...obj }) => {
+    console.log(x.number *= 3);
+}
+func() // 15
+func() // 15
+func(obj) // 15
+func(obj) // 45
 
 /* 
 Explanation:
