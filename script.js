@@ -2,13 +2,17 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 09 [November 09, 2021]
+// Test: 10 [November 10, 2021]
 
-let obj = { city: 'Hyderabad' };
-console.log(obj.hasOwnProperty('city')); // true
+let javascript_tests = 5;
+try {
+    javascript_tests = 5 / 0;
+} catch (error) {
+    javascript_tests = 0 / 5
+}
 
-/* 
-Explanation:
-The hasOwnProperty method lets us know if an object has a particular property. In our case, the property city. */
+console.log(javascript_tests); // Infinity
+
+/* Explanation: Division by 0 returns Infinity */
 
 
