@@ -2,16 +2,15 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 02 [November 02, 2021]
+// Test: 03 [November 03, 2021]
 
-let num = 10;
-console.log(num != 10 ? 'Yes' : 'No'); // No
+console.log(Number(2) === Number(2)); // true
+console.log(Boolean(false) === Boolean(false)); // true
+console.log(Symbol('foo') === Symbol('foo')); // false 
 
 /* 
 Explanation:
 
-In this problem, the ternary operator was used. Its syntax is: let result = condition ? value1 : value2;
-
-If the condition is true, then value 1 is returned, otherwise value 2. In our condition , 10 != 10 is false , therefore the second value is returned, and this is No*/
+Each Symbol is completely unique . The purpose of the argument passed to Symbol‚ is to give the Symbol a description. The Symbol value does not depend on the passed argument. When we check for equality, we create two brand new Symbols : the first Symbol('foo') and the second Symbol('foo') . The two values ​​are unique and not equal to each other, Symbol('foo') === Symbol('foo') returns false. */
 
 
