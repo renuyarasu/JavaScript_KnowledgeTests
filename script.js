@@ -4,14 +4,16 @@ console.clear();
 
 // Test: 04 [November 04, 2021]
 
-console.log([0, 1, 2, 3, 4, 5, 6, 7, 8, 9].reduce((a, b) => a + b)); // 45
-
-
+let javascript_tests = 1000;
+try {
+    javascript_tests = 550
+} finally {
+    javascript_tests = 64
+}
+console.log(javascript_tests);
 /* 
 Explanation:
 
-The reduce() method executes the callback function once for each element present in the array, except for voids, taking four arguments: the initial value (or the value from the previous callback), the value of the current element, the current index, and the array to be iterated over.
-
-In this example, the reduce() function will sum all elements of . */
+The finally statement is executed after the end of the try statement. This statement is executed whether an exception was thrown or not. */
 
 
