@@ -2,18 +2,25 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 05 [November 05, 2021]
+// Test: 06[November 06, 2021]
 
-let javascript_tests = 1000;
-try {
-    javascript_tests = 550
-} finally {
-    javascript_tests = 64
+function a(val) {
+    return true - val;
 }
-console.log(javascript_tests);
+let sum = a('10') + a('-10') + a('-10') + a('10');
+console.log(sum); // 4
+
 /* 
 Explanation:
 
-The finally statement is executed after the end of the try statement. This statement is executed whether an exception was thrown or not. */
+Inside the function there is a '-' sign, which means that when calculations occur, it will convert to a number:
+
+true --> 1
+
+'10' --> 10
+
+'-10' --> -10
+
+And then the usual mathematical calculations. */
 
 
