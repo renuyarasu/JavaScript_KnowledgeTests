@@ -2,14 +2,23 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 11 [November 11, 2021]
+// Test: 12 [November 12, 2021]
 
-let i = 10;
-const addTwo = x => x + 2;
-i = (i++, i = addTwo(i), i *= 3, i += 8, i -= 6);
-console.log(i); // 41
+const compareCars = (car1, car2 = car) => {
+    if (car1 !== car2) {
+        console.log('Car 1 not equal to Car 2');
+    } else {
+        console.log('They are the same');
+    }
+}
+const car = { name: 'BMW' };
+compareCars(car) // They are the same
 
 /* Explanation: 
-First we increment the value of i to 11 , then we call the addTwo(2) function and assign the result to the new value, i becomes 13 . After that we multiply the current value of i by 3 , the updated value of i will be 39 . Then we increment the value of i by 8, now the value will be 47 . And finally, we subtract 6 from i and the updated value will be 41. */
+Objects are passed by reference. When we test objects for strict equality ( === ), we compare their references. We set the default value for car2 to the car object and pass the car object as the value for car1.
+
+This means that both values ​​have a reference to the same memory location , so they are equal.
+
+The block of code in the else statement is run and printed to the console They are the same */
 
 
