@@ -2,17 +2,17 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 17 [November 17, 2021]
+// Test: 18 [November 18, 2021]
 
-const arr = [0, 5, 10];
-const func = value => value + 10;
-
-for (let i = 0; i < arr.length; i++) {
-    func(arr[i]);
+let a = 10;
+if (a >= 3) {
+    let a = 5;
 }
-console.log(arr);
+const b = a;
+console.log(b); //10
+
 
 /* Explanation: 
-There is a small trick to this problem. The func function increments the passed value by 10, but we do not redefine the elements of the arr array in the loop. Thus, the original array is output.*/
+Inside the if block, we have created a local variable a , which will only be available inside this block. For Js these variables are different so it won't override the first a. Therefore, in b we will write the value of the variable a, which is declared outside the if block, ie ten */
 
 
