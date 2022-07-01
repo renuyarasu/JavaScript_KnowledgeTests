@@ -2,17 +2,14 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 18 [November 18, 2021]
+// Test: 19 [November 19, 2021]
 
-let a = 10;
-if (a >= 3) {
-    let a = 5;
-}
-const b = a;
-console.log(b); //10
-
+const arr = [1, 2, 3, 4];
+console.log(arr.fill(0, 2, 4)); // [1, 2, 0, 0]
 
 /* Explanation: 
-Inside the if block, we have created a local variable a , which will only be available inside this block. For Js these variables are different so it won't override the first a. Therefore, in b we will write the value of the variable a, which is declared outside the if block, ie ten */
+The fill() method fills all array elements from start to end index with a single value. In this example, we fill with zero all elements from 2 inclusive to 4 inclusive.
+
+*/
 
 
