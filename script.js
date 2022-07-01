@@ -2,14 +2,17 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 16 [November 16, 2021]
+// Test: 17 [November 17, 2021]
 
-console.log(path); // ReferenceError: Cannot access 'path' before initialization
-let path = '/img/logo.png'
+const arr = [0, 5, 10];
+const func = value => value + 10;
+
+for (let i = 0; i < arr.length; i++) {
+    func(arr[i]);
+}
+console.log(arr);
 
 /* Explanation: 
-console.log does not see the path variable, because it hasn't been declared yet, so it throws an error .
-
-If the path variable were declared using the var keyword, then the answer would be undefined. It has to do with scope. */
+There is a small trick to this problem. The func function increments the passed value by 10, but we do not redefine the elements of the arr array in the loop. Thus, the original array is output.*/
 
 
