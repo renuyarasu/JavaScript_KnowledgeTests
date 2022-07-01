@@ -2,14 +2,13 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 19 [November 19, 2021]
+// Test: 20 [November 20, 2021]
 
-const arr = [1, 2, 3, 4];
-console.log(arr.fill(0, 2, 4)); // [1, 2, 0, 0]
+const arr = [0, 5, 10, 6, 15];
+const result = 6 in arr;
+console.log(result); // false
 
 /* Explanation: 
-The fill() method fills all array elements from start to end index with a single value. In this example, we fill with zero all elements from 2 inclusive to 4 inclusive.
-
-*/
+The in operator returns true if the specified index is present in the array or object. There is no element at index 6 in this array , so false is returned.*/
 
 
