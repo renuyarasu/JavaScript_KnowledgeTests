@@ -4,7 +4,11 @@ console.clear();
 
 // Test: 30 [November 30, 2021]
 
-console.log(eval('3+1')); //4
-console.log(eval(new String('3+1'))); // [String: '3+1']
-console.log(eval('3+1') === eval('4')); // true
-console.log(eval('3+1') === eval(new String('3+1'))); // false
+let a = {};
+let b = { ket: 'b' };
+let c = { ket: 'c' };
+
+a[b] = 1;
+a[c] = 2;
+
+console.log(a[b]); // 2
