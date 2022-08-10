@@ -2,11 +2,11 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 21 [November 21, 2021]
+// Test: 22 [November 22, 2021]
 
-const x = [1, 2, 3];
-const y = ['Hello', 'World!'];
+const x = 'Hello' || null && 'World!';
+const y = true & 0 || 'VedaGna';
+const result = x || y;
 
-const result = x.concat(y);
-console.log(result);
+console.log(result); // Hello
 
