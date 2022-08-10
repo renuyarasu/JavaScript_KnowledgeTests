@@ -1,1 +1,1 @@
-break
+parseInt('016', 16)
