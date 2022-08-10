@@ -2,11 +2,8 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 24 [November 24, 2021]
+// Test: 25 [November 25, 2021]
 
-let result = 0;
-function addValue(x) {
-    result = result + x;
-    return result;
-}
-console.log(addValue(5)); // 5
+let myFun = x => { x, 1, 2, 3 };
+let result = myFun(10);
+console.log(result); // undefined
