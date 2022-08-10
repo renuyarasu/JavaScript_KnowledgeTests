@@ -2,11 +2,12 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 22 [November 22, 2021]
+// Test: 23 [November 23, 2021]
 
-const x = 'Hello' || null && 'World!';
-const y = true & 0 || 'VedaGna';
-const result = x || y;
+function myFun() {
+    return;
+    const name = 'VedaGna';
+}
+const name = myFun();
 
-console.log(result); // Hello
-
+console.log(name); // undefined
