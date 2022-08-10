@@ -2,8 +2,10 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 25 [November 25, 2021]
-
-let myFun = x => { x, 1, 2, 3 };
-let result = myFun(10);
-console.log(result); // undefined
+// Test: 26 [November 26, 2021]
+let i = 0;
+for (i; i < 17; i += 4) {
+    if (++i === 7) break
+    else continue
+}
+console.log(i++); //20
