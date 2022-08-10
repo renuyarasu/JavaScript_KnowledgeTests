@@ -2,12 +2,11 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 23 [November 23, 2021]
+// Test: 24 [November 24, 2021]
 
-function myFun() {
-    return;
-    const name = 'VedaGna';
+let result = 0;
+function addValue(x) {
+    result = result + x;
+    return result;
 }
-const name = myFun();
-
-console.log(name); // undefined
+console.log(addValue(5)); // 5
