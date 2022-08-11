@@ -2,12 +2,12 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 04 [December 02, 2021]
+// Test: 05 [December 03, 2021]
 
-let myArray = [2, 5, 9];
-console.log(myArray.indexOf(2)); // 0
-console.log(myArray.indexOf(7)); // -1
-console.log(myArray.indexOf(9, 2)); // 2
-console.log(myArray.indexOf(2, -1)); // -1
-console.log(myArray.indexOf(2, -3)); // 0
-console.log(myArray.indexOf(2, 5)); // -1
+let first = 5;
+let second = new Number(5);
+let third = 3;
+
+console.log(first == second); // true
+console.log(first === second); // false
+console.log(second === third); // false
