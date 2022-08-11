@@ -2,12 +2,10 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 05 [December 03, 2021]
+// Test: 06 [December 03, 2021]
 
-let first = 5;
-let second = new Number(5);
-let third = 3;
+let animals = ['Tiger', 'Lion', 'Elephant', 'Leopard', 'Panther', 'Cheetah', 'Wolf', 'Jaguar'];
 
-console.log(first == second); // true
-console.log(first === second); // false
-console.log(second === third); // false
+console.log(animals.slice(2)); // [ 'Elephant', 'Leopard', 'Panther', 'Cheetah', 'Wolf', 'Jaguar' ]
+console.log(animals.slice(1, 5)); // [ 'Lion', 'Elephant', 'Leopard', 'Panther' ]
+console.log(animals.slice(2, -1)); // [ 'Elephant', 'Leopard', 'Panther', 'Cheetah', 'Wolf' ]
