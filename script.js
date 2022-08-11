@@ -2,10 +2,17 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 06 [December 03, 2021]
+// Test: 07 [December 04, 2021]
 
-let animals = ['Tiger', 'Lion', 'Elephant', 'Leopard', 'Panther', 'Cheetah', 'Wolf', 'Jaguar'];
-
-console.log(animals.slice(2)); // [ 'Elephant', 'Leopard', 'Panther', 'Cheetah', 'Wolf', 'Jaguar' ]
-console.log(animals.slice(1, 5)); // [ 'Lion', 'Elephant', 'Leopard', 'Panther' ]
-console.log(animals.slice(2, -1)); // [ 'Elephant', 'Leopard', 'Panther', 'Cheetah', 'Wolf' ]
+const data = {
+    result: 0,
+    numbers: [1, 2, 3, 4, 5],
+    computeResult() {
+        const addAll = () => {
+            return this.numbers.reduce((total, cur) => total + cur, 0);
+        }
+        this.result = addAll()
+    }
+}
+data.computeResult();
+console.log(data.result); // 15
