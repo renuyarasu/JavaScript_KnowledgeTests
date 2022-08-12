@@ -3,19 +3,20 @@
 console.clear();
 // let fruits = ['Apple', 'Banana', 'Avocado', 'Apricots', 'Blackberries', 'Blueberries'];
 
-// Test: 26 [December 14, 2021]
+// Test: 27 [December 15, 2021]
 
-// concat method 
+// copyWithin method 
+console.log([1, 2, 3, 4, 5].copyWithin(0, 3)); // [ 4, 5, 3, 4, 5 ]
+console.log([1, 2, 3, 4, 5].copyWithin(0, 3, 4)); // [ 4, 2, 3, 4, 5 ]
+console.log([1, 2, 3, 4, 5].copyWithin(0, -2, -1)); // [ 4, 2, 3, 4, 5 ]
 
-let x = ['a', 'b', 'c'];
-let y = ['d', 'e', 'f'];
-let z = x.concat(y);
 
-console.log(z); // [ 'a', 'b', 'c', 'd', 'e', 'f' ]
+
 /* 
-The concat() method returns a new array consisting of the array it was called on, concatenated with other arrays and/or values ​​passed as arguments.
+The copyWithin() method copies the sequence of array elements within it to a position starting at index target. The copy is taken at the indexes given by the second and third arguments start and end. The end argument is optional and defaults to the length of the array.
 
-The concat method creates a new array consisting of the elements in the object it was called on, followed in order, for each argument, by all of its elements (if the argument is an array), or the argument itself (if it is not an array).
+The target, start, and end arguments are cast to Number and truncated to integer values.
 
-The concat method does not modify this array or any of the arrays passed as arguments, but instead returns a shallow copy containing copies of those elements that were concatenated with the original arrays.
- */
+If the start argument is negative, it is treated as length+start where length is the length of the array. If the end argument is negative, it is treated as length+end.
+
+The copyWithin function is intentionally generic, it doesn't require the this value inside it to be an Array object, and besides, the copyWithin function is a mutating method, it will change the this object and return it, not just return a copy. */
