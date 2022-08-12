@@ -2,8 +2,10 @@
 // https://t.me/javascript_tests
 console.clear();
 
-// Test: 18 [December 10, 2021]
+// Test: 19 [December 11, 2021]
 
-var a = 5;
-const b = window.a;
-console.log(b); // ReferenceError: a is not defined
+let a = 'Hello World';
+let b = 'JavaScript | Knowledge Tests';
+
+let result = (a && b) === !!(a && b);
+console.log(result); // false
