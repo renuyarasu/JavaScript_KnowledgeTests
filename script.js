@@ -7,7 +7,7 @@ let result =
 console.log(result); 
 */
 
-// Test: 45 [December 25, 2021]
-let myArray = (ele) => (ele, 5, 2, 9);
-let result = myArray(43)
-console.log(result); // 9
+// Test: 46 [December 26, 2021]
+
+const circumference = r => parseFloat(r) * 2.0 * Math.PI;
+console.log(circumference(3));
