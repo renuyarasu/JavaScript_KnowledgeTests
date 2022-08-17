@@ -4,11 +4,9 @@ console.clear();
 // let fruits = ['Apple', 'Banana', 'Avocado', 'Apricots', 'Blackberries', 'Blueberries'];
 // let result =
 
-// Test: 41 [December 23, 2021]
+// Test: 42 [December 23, 2021]
 
-let myArray = [5, 10, 20];
+let fruits = ['Apple', 'Banana', 'Avocado', 'Apricots', 'Blackberries', 'Blueberries'];
 
-for (let value of myArray) {
-    value += 2;
-    console.log(value); // 7,12,22
-}
+let result = fruits.sort();
+console.log(result); // ['Apple', 'Avocado', 'Apricots', Banana', 'Blackberries', 'Blueberries'];
