@@ -4,25 +4,27 @@ console.clear();
 // let fruits = ['Apple', 'Banana', 'Avocado', 'Apricots', 'Blackberries', 'Blueberries'];
 // let result =
 
-// Test: 43 [December 24, 2021]
+// Test: 44 [December 25, 2021]
 
-const myObject = {
-    log: ['A', 'B', 'C', 'D'],
-    get latest() {
-        if (this.log.length === 0) {
-            return undefined;
-        }
-        return this.log[this.log.length - 1]
+let check = function (num) {
+    if (num < MIN || num > MAX) {
+        throw new RangeError('VedaGna ' + MIN + 'Yarasu ' + MAX);
+    }
+};
+try {
+    check(500);
+}
+catch (e) {
+    if (e instanceof RangeError) {
+
     }
 }
-console.log(myObject.latest); // D
-
-// getter 🔥
+// RangeError 🔥
 /* 
-The get syntax associates a property of an object with a function that will be called when that property is accessed.
+A RangeError object represents an error that occurs when a value is not in the set or is out of range.
 
-Sometimes it is desirable to allow access to a property that returns a dynamically calculated value, or you may want to reflect the state of an internal variable without the need for explicit method calls. In JavaScript, this can be done using a getter.
+A RangeError exception is thrown when an attempt is made to pass a number as an argument to a function that is not within the valid range of the function's argument. It can occur when creating an array with the wrong length through the Array constructor, or when passing bad values ​​to the number methods Number.toExponential(), Number.toFixed(), or Number.toPrecision().
 
-It is not possible to have a getter bound to a property and have that property actually contain a value at the same time, although it is possible to use a getter and setter in combination to create a pseudo-property type.
+The global RangeError object does not contain any methods of its own, however, it does inherit some methods from the prototype chain.
 
-An example is shown in the picture. */
+An example of work is shown in the picture. */
