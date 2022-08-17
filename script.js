@@ -3,9 +3,7 @@
 console.clear();
 // let fruits = ['Apple', 'Banana', 'Avocado', 'Apricots', 'Blackberries', 'Blueberries'];
 
-// Test: 34 [December 19, 2021]
+// Test: 35 [December 20, 2021]
 
-let fruits = ['Apple', 'Avocado', 'Apricots'];
-let total = fruits.push('Banana', 'Blackberries', 'Blueberries');
-console.log(fruits); // ['Apple', 'Avocado', 'Apricots','Banana', 'Blackberries', 'Blueberries'];
-console.log(total); // 6
+const result = '10' - 8 + true;
+console.log(result); // 3
