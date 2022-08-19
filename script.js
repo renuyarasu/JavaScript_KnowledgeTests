@@ -7,13 +7,10 @@ let result =
 console.log(result); 
 */
 
-// Test: 50 [December 27, 2021]
+// Test: 51 [December 27, 2021]
 
-function strict(a, b) {
-    'use strict';
-    a = 15;
-    b = 7;
-    const result = arguments[1];
-    console.log(result); // 15
-}
-strict(7, 15); 
+const info = {
+    [Symbol('a')]: 'b'
+};
+console.log(info); // { [Symbol(a)]: 'b' }
+console.log(Object.keys(info)); // []
