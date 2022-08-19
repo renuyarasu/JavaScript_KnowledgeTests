@@ -7,25 +7,28 @@ let result =
 console.log(result); 
 */
 
-// Test: 47 [December 26, 2021]
+// Test: [December 26, 2021]
 
-// TypeError 🔥
+// URIError
 
 try {
-    null.f();
+    decodeURIComponent('%');
 } catch (e) {
-    console.log(e instanceof TypeError); // true
-    console.log(e.message);  
-    console.log(e.name); // TypeError
-    console.log(e.fileName);  
-    console.log(e.lineNumber);  
-    console.log(e.columnNumber); 
-    console.log(e.stack);  
+    console.log(e instanceof URIError); // true
+    console.log(e.message); // URI malformed
+    console.log(e.name);
+    console.log(e.fileName);
+    console.log(e.lineNumber);
+    console.log(e.columnNumber);
+    console.log(e.stack);
 }
-/* The TypeError object represents the error that occurs when a value is not of the expected type.
 
-A TypeError exception is thrown when an operand or argument passed to a function is not compatible with the type expected by the operator or function.
 
-The global TypeError object does not contain any methods of its own, however, it does inherit some methods from the prototype chain.
+/* The URIError object represents an error that occurs when the global URI handling functions are used incorrectly.
 
-An example of work is shown in the picture. */
+A URIError exception is thrown when an invalid URI is passed to global URI handling functions.
+
+Options:
+message is an optional parameter. A human-readable description of the error.
+fileName is an optional parameter. The name of the file containing the code that caused the exception.
+lineNumber is an optional parameter. The line number of the code that caused the exception. */
