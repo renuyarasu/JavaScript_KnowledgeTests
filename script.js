@@ -9,22 +9,23 @@ console.log(result);
 
 // Test: 47 [December 26, 2021]
 
-const uri = 'https://www.goodreads.com/';
-const encoded = encodeURI(uri);
+// TypeError 🔥
 
 try {
-    console.log(encoded);
+    null.f();
 } catch (e) {
-    console.error(e);
+    console.log(e instanceof TypeError); // true
+    console.log(e.message);  
+    console.log(e.name); // TypeError
+    console.log(e.fileName);  
+    console.log(e.lineNumber);  
+    console.log(e.columnNumber); 
+    console.log(e.stack);  
 }
+/* The TypeError object represents the error that occurs when a value is not of the expected type.
 
+A TypeError exception is thrown when an operand or argument passed to a function is not compatible with the type expected by the operator or function.
 
-// encodeURI() 🔥
-/* 
-The encodeURI() method encodes a Uniform Resource Identifier (URI) by replacing some characters with one, two, three, or four escape sequences representing the UTF-8 encoding of the character (the four escape sequences will only be used for characters consisting of two "surrogate" characters) .
+The global TypeError object does not contain any methods of its own, however, it does inherit some methods from the prototype chain.
 
-The URI is assumed to be a complete URI, so the method does not encode reserved characters that have special meaning in the URI.
-
-encodeURI replaces all characters except the following with the appropriate UTF-8 escape sequences
-
-An example is shown in the picture. */
+An example of work is shown in the picture. */
