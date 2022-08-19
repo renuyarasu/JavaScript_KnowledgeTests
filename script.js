@@ -9,26 +9,19 @@ console.log(result);
 
 // Test: [December 26, 2021]
 
-// URIError
+// Date
 
-try {
-    decodeURIComponent('%');
-} catch (e) {
-    console.log(e instanceof URIError); // true
-    console.log(e.message); // URI malformed
-    console.log(e.name);
-    console.log(e.fileName);
-    console.log(e.lineNumber);
-    console.log(e.columnNumber);
-    console.log(e.stack);
-}
+let today = new Date();
+console.log(today); // 2022-08-19T02:24:33.513Z
+let birthday = new Date('Friday, 19 August 2022 (IST)'); // 2022-08-18T18:30:00.000Z
+console.log(birthday);
 
+/* Creates an instance of a Date object representing a point in time. The Date object contains the number of milliseconds since January 1, 1970 UTC
 
-/* The URIError object represents an error that occurs when the global URI handling functions are used incorrectly.
+If no arguments were passed, the constructor creates a Date object for the current date and time, according to the system settings.
 
-A URIError exception is thrown when an invalid URI is passed to global URI handling functions.
+If at least two arguments are passed, the missing arguments are set to the starting values ​​of day of month 1 and time of midnight.
 
-Options:
-message is an optional parameter. A human-readable description of the error.
-fileName is an optional parameter. The name of the file containing the code that caused the exception.
-lineNumber is an optional parameter. The line number of the code that caused the exception. */
+The Date object provides generic behavior across all platforms. A time value can be passed between systems to represent the same point in time and, if used to create a local date object, will reflect the local time equivalent.
+
+An example of work is shown in the picture.*/
