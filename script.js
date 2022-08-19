@@ -7,10 +7,13 @@ let result =
 console.log(result); 
 */
 
-// Test: 49 [December 27, 2021]
+// Test: 50 [December 27, 2021]
 
-
-// join()
-
-const result = ['Hello World', true, 7];
-console.log(result.join(' - '));
+function strict(a, b) {
+    'use strict';
+    a = 15;
+    b = 7;
+    const result = arguments[1];
+    console.log(result); // 15
+}
+strict(7, 15); 
