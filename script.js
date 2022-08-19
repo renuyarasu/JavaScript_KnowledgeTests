@@ -7,14 +7,10 @@ let result =
 console.log(result); 
 */
 
-// Test: 48 [December 27, 2021]
+// Test: 49 [December 27, 2021]
 
 
-// Math.cbrt()
+// join()
 
-const num = 4324;
-const result = Math.cbrt(num)
-console.log(result); // 16.291530848206612
-
-// The Math.cbrt() function returns the cube root of a number, that is
-
+const result = ['Hello World', true, 7];
+console.log(result.join(' - '));
