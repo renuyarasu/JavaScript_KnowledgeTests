@@ -12,6 +12,5 @@ console.log(result);
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
-const myArray = [true, 'VedaGna', 5, Infinity];
-const result = myArray.unshift(NaN);
-console.log(result); // 5
+const myArray = ['1', '2', '3', 3, 2, 1];
+console.log(myArray.lastIndexOf(1)); // 5
